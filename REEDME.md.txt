@@ -1,0 +1,26 @@
+# 📄 Procesador de PDFs - Búsqueda de Códigos de Expediente
+
+## 📌 Descripción
+Este script permite **buscar códigos de expediente dentro de archivos PDF** y generar un informe en formato Excel con los resultados. Utiliza bibliotecas como `pdfplumber`, `pandas` y `tkinter` para extraer información y notificar al usuario.
+
+## 🚀 Requisitos
+Antes de ejecutar el script, asegúrate de tener:
+- Python 3 instalado
+- Las siguientes bibliotecas (`pip install -r requirements.txt`):
+  - `pandas`
+  - `pdfplumber`
+  - `tkinter`
+  - `tqdm`
+
+## 📂 Estructura del proyecto
+📂Buscador_de_ID
+📁 datos 📂 pdfs # Carpeta con los PDFs a analizar 📄 codigos.xlsx # Archivo Excel con los códigos de expediente 📄 script.py # Código principal 📄 README.md # Documentación del proyecto
+
+
+## ⚙️ Uso
+1. Coloca los archivos PDF en la carpeta `datos/pdfs`.
+2. Asegúrate de que el archivo `codigos.xlsx` contenga una columna `Expediente` con los códigos a buscar.
+3. Ejecuta el script con:
+   ```sh
+   python script.py
+4. Al finalizar, el archivo Resultados_de_busqueda.xlsx contendrá los resultados de la búsqueda.
